@@ -2,10 +2,40 @@ import { Link } from "react-router-dom";
 import Styled from "./Header.module.css"
 import { AiFillInstagram } from "react-icons/ai";
 import { FaTelegram } from "react-icons/fa";
+import { IoMenu } from "react-icons/io5";
+import { useContext, useState } from "react";
+
+import { TabContext } from "../../context";
+import { IoClose } from "react-icons/io5";
 const Header = () => {
+    const { } = useContext(TabContext);
+    const [menu, setMenu] = useState(false)
+    const OpenMenu = () => {
+        setMenu(!menu)
+    }
+
     return (
         <>
-            <div className={Styled.HeaderBox}>
+            <div className={Styled.HeaderBox2}>
+                <div className={Styled.HeaderLine1}>
+                    <div className={Styled.logoBox}>
+                        <img src="image/Untitled-1.png" alt="" />
+                    </div>
+                    <div className={Styled.menuBox}>
+                        <div>{menu ?<IoClose onClick={OpenMenu}/> : <IoMenu onClick={OpenMenu}/>  }</div>
+                    </div>
+                </div>
+                
+
+                <div className={`${Styled.HeaderLine2} ${menu ? Styled.show : ""}`}>
+                   <div>یرنامه ها</div>
+                   <div>قوانین و مقررات</div>
+                   <div>بلاگ</div>
+                   <div>تماس با ما</div>
+                   <div className={Styled.divEnd}>درباره ما</div>
+                </div>
+            </div>
+            <div className={Styled.HeaderBox1}>
                 <div className={Styled.box1}>
                     <img src="image/Untitled-1.png" alt="" />
                 </div>
@@ -17,7 +47,6 @@ const Header = () => {
                     <Link>درباره ما</Link>
                 </div>
                 <div className={Styled.box3}>
-
                     <FaTelegram />
                     <AiFillInstagram />
                 </div>
