@@ -1,9 +1,13 @@
-import Header from "../../components/Header/Header"
 
+import Styled from "./Home.module.css"
 const Home = () =>{
     return(
         <>
-        <Header />
+        <div className={Styled.HomeBox}>
+            <img src="image/Untitled-1.png" alt="" />
+            <span>سایت در حال بروزرسانی میباشد</span>
+        </div>
+        
         </>
     )
 }
