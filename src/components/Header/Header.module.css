@@ -1,0 +1,24 @@
+.HeaderBox{
+    width: 100%;
+    padding: 15px 20px ;
+   border-bottom: 1px solid #ccc;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.LogoBox{
+    width: 30%;
+    display: flex;
+    
+    align-items: center;
+    gap: 10px;
+}
+.LogoBox img{
+    width: 60px;
+}
+.Menu1 svg{
+    font-size: 3rem;
+}
