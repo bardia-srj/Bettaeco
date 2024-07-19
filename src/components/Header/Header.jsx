@@ -23,7 +23,7 @@ const Header = () => {
                     </div>
                 </div>
                 <div className={`${Styled.HeaderLine2} ${menu ? Styled.show : ""}`}>
-                   <div>یرنامه ها</div>
+                   <div>برنامه ها</div>
                    <div>قوانین و مقررات</div>
                    <div>بلاگ</div>
                    <div>تماس با ما</div>

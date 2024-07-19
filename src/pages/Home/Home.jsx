@@ -1,3 +1,4 @@
+import Card from "../../components/Card/card"
 import Header from "../../components/Header/Header"
 import Styled from "./Home.module.css"
 const Home = () => {
@@ -14,6 +15,12 @@ const Home = () => {
             <div className={Styled.Box1}>
                 <div className={Styled.TitleLine}>
                     <span>برنامـــه‌های پیـــش‌رو</span>
+                </div>
+                <div className={Styled.CardBox}>
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
                 </div>
             </div>
         </>

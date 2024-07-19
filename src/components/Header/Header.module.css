@@ -71,6 +71,9 @@
 }
 
 @media (min-width:700px) {
+    .HeaderBox2{
+        display: none;
+    }
     .HeaderBox1 {
         width: 100%;
         box-sizing: border-box;
