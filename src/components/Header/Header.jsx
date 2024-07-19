@@ -3,11 +3,9 @@ import Styled from "./Header.module.css"
 import { AiFillInstagram } from "react-icons/ai";
 import { FaTelegram } from "react-icons/fa";
 import { IoMenu } from "react-icons/io5";
-import { useContext, useState } from "react";
-import { TabContext } from "../../context";
+import {useState } from "react";
 import { IoClose } from "react-icons/io5";
 const Header = () => {
-    const { } = useContext(TabContext);
     const [menu, setMenu] = useState(false)
     const OpenMenu = () => {
         setMenu(!menu)
@@ -24,8 +22,6 @@ const Header = () => {
                         <div>{menu ?<IoClose onClick={OpenMenu}/> : <IoMenu onClick={OpenMenu}/>  }</div>
                     </div>
                 </div>
-                
-
                 <div className={`${Styled.HeaderLine2} ${menu ? Styled.show : ""}`}>
                    <div>یرنامه ها</div>
                    <div>قوانین و مقررات</div>
