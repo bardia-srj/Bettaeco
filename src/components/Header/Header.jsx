@@ -4,7 +4,6 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaTelegram } from "react-icons/fa";
 import { IoMenu } from "react-icons/io5";
 import { useContext, useState } from "react";
-
 import { TabContext } from "../../context";
 import { IoClose } from "react-icons/io5";
 const Header = () => {
