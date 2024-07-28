@@ -1,12 +1,11 @@
 import { useContext, useState } from "react"
-
 import Header from "../../components/Header/Header"
 import Styled from "./TravelPage.module.css"
 import { TabContext } from "../../context"
 
 const TravelPage = () => {
     const [tab, setTab] = useState(1)
-    const { travelData, setTravelData, dataState } = useContext(TabContext)
+    const { dataState } = useContext(TabContext)
     console.log(dataState);
     return (
         <>

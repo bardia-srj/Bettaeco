@@ -4,7 +4,7 @@ import { IoLocationOutline } from "react-icons/io5";
 import { TabContext } from "../../context";
 import { Link } from "react-router-dom";
 const Card = (Props) => {
-    const {travelData , setTravelData , dataState , setDataState} = useContext(TabContext)
+    const { dataState , setDataState} = useContext(TabContext)
 
 const HandlepropsCard = () =>{
     setDataState(Props)

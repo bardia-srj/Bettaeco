@@ -5,7 +5,7 @@ import Styled from "./Travels.module.css"
 import { TabContext } from "../../context"
 
 const Travels = () => {
-    const { travelData, setTravelData } = useContext(TabContext)
+    const { travelData } = useContext(TabContext)
 
     return (
         <>

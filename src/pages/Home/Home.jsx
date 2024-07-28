@@ -4,7 +4,7 @@ import Header from "../../components/Header/Header"
 import Styled from "./Home.module.css"
 import { TabContext } from "../../context"
 const Home = () => {
-    const { travelData, setTravelData } = useContext(TabContext)
+    const { travelData } = useContext(TabContext)
     console.log(travelData);
     
     return (
@@ -25,13 +25,10 @@ const Home = () => {
                     {travelData?.map((item) => (
                         <Card item={item} />
                     ))}
-                    {/* <Card  />
-                    <Card  />
-                    <Card />
-                    <Card /> */}
+                   
                 </div>
             </div>
-            {/* <Footer /> */}
+
         </>
     )
 }
