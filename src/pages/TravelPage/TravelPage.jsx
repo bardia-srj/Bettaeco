@@ -77,24 +77,24 @@ const TravelPage = () => {
                 </div>
                 <div className={Styled.TabBox}>
                     <div className={Styled.TabTitleBox}>
-                        <div className={`${tab == 1 ? Styled.TabTitleActive : Styled.TabTitle}`}>
+                        <div className={`${tab === 1 ? Styled.TabTitleActive : Styled.TabTitle}`}>
                             <span onClick={() => setTab(1)}>شرح برنامه</span>
                         </div>
-                        <div className={`${tab == 2 ? Styled.TabTitleActive : Styled.TabTitle}`}>
+                        <div className={`${tab === 2 ? Styled.TabTitleActive : Styled.TabTitle}`}>
                             <span onClick={() => setTab(2)}>شرح خدمات</span>
                         </div>
-                        <div className={`${tab == 3 ? Styled.TabTitleActive : Styled.TabTitle}`}>
+                        <div className={`${tab === 3 ? Styled.TabTitleActive : Styled.TabTitle}`}>
                             <span onClick={() => setTab(3)}>اقامــت</span>
                         </div>
-                        <div className={`${tab == 4 ? Styled.TabTitleActive : Styled.TabTitle}`}>
+                        <div className={`${tab === 4 ? Styled.TabTitleActive : Styled.TabTitle}`}>
                             <span onClick={() => setTab(4)}>تجهیزات</span>
                         </div>
-                        <div className={`${tab == 5 ? Styled.TabTitleActive : Styled.TabTitle}`}>
+                        <div className={`${tab === 5 ? Styled.TabTitleActive : Styled.TabTitle}`}>
                             <span onClick={() => setTab(5)}>نکتــه‌ها</span>
                         </div>
 
                     </div>
-                    <div className={`${tab == 1 ? Styled.TabPage1 : Styled.None}`}>
+                    <div className={`${tab === 1 ? Styled.TabPage1 : Styled.None}`}>
                         <h3>شرح برنامه</h3>
                         <div className={Styled.dataBox}>
                             <span>روز 1.<br />
@@ -122,7 +122,7 @@ const TravelPage = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className={`${tab == 3 ? Styled.TabPage3 : Styled.None}`}>
+                    <div className={`${tab === 3 ? Styled.TabPage3 : Styled.None}`}>
                         <div className={Styled.TableBox}>
                             <div className={Styled.TableTitleBox}>
                                 <span>روز : ۱</span>
@@ -205,7 +205,7 @@ const TravelPage = () => {
                         </div>
 
                     </div>
-                    <div className={`${tab == 4 ? Styled.TabPage2 : Styled.None}`}>
+                    <div className={`${tab === 4 ? Styled.TabPage2 : Styled.None}`}>
                         <h3>تجهیزات</h3>
                         <div className={Styled.MobilizationBox}>
                             <span>
@@ -256,7 +256,7 @@ const TravelPage = () => {
 
                         </div>
                     </div>
-                    <div className={`${tab == 5 ? Styled.TabPage2 : Styled.None}`}>
+                    <div className={`${tab === 5 ? Styled.TabPage2 : Styled.None}`}>
                         <h3>نکته ها</h3>
                         <div className={Styled.PointBox}>
                             <p>لطفا اطلاعات همراهان خود را بصورت کامل ارسال کنید.</p>

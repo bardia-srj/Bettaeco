@@ -1,9 +1,6 @@
 .ImageBox {
     width: 100%;
     position: relative;
-
-
-
 }
 
 .ImageBox img {
@@ -208,7 +205,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+
 
 }
 
@@ -310,7 +307,8 @@
     color: #858585;
     font-size: .95rem;
 }
-.AbouteBox{
+
+.AbouteBox {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -318,6 +316,7 @@
     width: 100%;
     padding: 10px 0;
 }
+
 .AbouteBox .Title1 {
     width: 90%;
     display: flex;
@@ -341,7 +340,8 @@
     z-index: -1;
     bottom: 10px;
 }
-.Aboute{
+
+.Aboute {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -349,22 +349,26 @@
     flex-direction: column;
     padding: 30px;
 }
-.Aboute div{
+
+.Aboute div {
     margin: 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.Aboute h4{
+
+.Aboute h4 {
     font-weight: bolder;
 }
-.Aboute span{
+
+.Aboute span {
     color: #3b3b3b;
     margin: 10px 0;
     font-weight: 200;
 }
-.LawsBox{
+
+.LawsBox {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -372,6 +376,7 @@
     width: 100%;
     padding: 10px 0;
 }
+
 .LawsBox .Title1 {
     width: 90%;
     display: flex;
@@ -395,7 +400,8 @@
     z-index: -1;
     bottom: 10px;
 }
-.Laws{
+
+.Laws {
     padding: 20px;
     display: flex;
     justify-content: center;
