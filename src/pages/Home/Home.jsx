@@ -5,7 +5,7 @@ import Styled from "./Home.module.css"
 import { TabContext } from "../../context"
 const Home = () => {
     const { travelData } = useContext(TabContext)
-    console.log(travelData);
+  
     
     return (
         <>
@@ -33,4 +33,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Home;

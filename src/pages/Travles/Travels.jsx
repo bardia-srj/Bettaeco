@@ -33,4 +33,4 @@ const Travels = () => {
     )
 }
 
-export default Travels
+export default Travels;

@@ -341,6 +341,6 @@ const TravelPage = () => {
         </>
     )
 }
-export default TravelPage
+export default TravelPage;
 
 
