@@ -29,3 +29,9 @@ code {
     url('./../public/Fonts/regular/iranyekanwebregular.woff') format('woff'),
     url('./../public/Fonts/regular/iranyekanwebregular.woff2') format('woff2'),
 }
+a{
+  text-decoration: none;
+  color: black;
+  
+  
+}

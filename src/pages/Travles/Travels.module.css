@@ -1,0 +1,87 @@
+.BannerBox {
+    width: 100%;
+    position: relative;
+
+
+}
+
+.BannerBox img {
+    width: 100%;
+    filter: brightness(0.4);
+}
+
+.BannerText {
+    display: flex;
+  
+    flex-direction: column;
+    justify-content: start;
+    position: absolute;
+    bottom: 50px;
+right: 40%;
+    gap: 10px;
+}
+
+.BannerText .s1 {
+    color: #FFCB05;
+    font-weight: 800;
+}
+
+.BannerText .s2{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.Box1 {
+    width: 100%;
+}
+
+.TitleLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.TitleLine span {
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    border-radius: 20px;
+}
+
+.CardBox {
+    padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+@media (max-width:650px) {
+    .CardBox {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .BannerText .s1{
+        font-size: 1.8rem;
+    }
+
+}
+
+@media (min-width:650px) {
+    .CardBox {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .BannerText .s1{
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width:900px) {
+    .CardBox {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .BannerText .s1{
+        font-size: 3.5rem;
+    }
+}

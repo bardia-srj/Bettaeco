@@ -1,22 +1,38 @@
+import { useContext, useEffect } from "react";
 import Styled from "./Card.module.css"
 import { IoLocationOutline } from "react-icons/io5";
+import { TabContext } from "../../context";
+import { Link } from "react-router-dom";
 const Card = (Props) => {
+    const {travelData , setTravelData , dataState , setDataState} = useContext(TabContext)
+
+const HandlepropsCard = () =>{
+    setDataState(Props)
+}
+
+useEffect(() =>{
+    HandlepropsCard()
+    console.log(dataState);
+},[])
+
     return (
-        <>
-            <div className={Styled.CardBox}>
+        <> 
+        <Link to="/travelpage">
+            <div className={Styled.CardBox} onClick={() => HandlepropsCard()}>
                 <div className={Styled.ImageBox}>
                     <img src="image/1.jpg" alt="" />
                 </div>
                 <div className={Styled.TextBox}>
                     <div className={Styled.LocationBox}>
                         <IoLocationOutline />
-                        <span>دزفول و اندیمشک</span>
+                        <span>{Props.item.TitleTravel}</span>
                     </div>
                     <div className={Styled.DateBox}>
-                       <span>۲/۵ روزه از تاریخ ۱۴۰۳/۱/۱</span>
+                       <span>{Props.item.Text3}  از تاریخ {Props.item.Text6}</span>
                     </div>
                 </div>
             </div>
+        </Link>
         </>
     )
 }

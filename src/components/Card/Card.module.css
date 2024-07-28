@@ -9,7 +9,7 @@
 }
 .ImageBox{
     width:100%;
-    height: 85%;
+    height: 82%;
    
 
 }
@@ -23,7 +23,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
     font: bold;
 }
 .LocationBox{

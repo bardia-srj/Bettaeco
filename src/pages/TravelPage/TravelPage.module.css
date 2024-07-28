@@ -1,0 +1,407 @@
+.ImageBox {
+    width: 100%;
+    position: relative;
+
+
+
+}
+
+.ImageBox img {
+    width: 100%;
+    filter: brightness(0.7);
+}
+
+.ImageBox span {
+    position: absolute;
+    bottom: 50px;
+    color: white;
+    font-size: 1.5rem;
+
+
+}
+
+.ImageBox div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.GalleryBox {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+
+}
+
+.GalleryBox .Title1 {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.Title1 span {
+    background-color: #fff;
+    padding: 0 10px;
+    align-items: center;
+}
+
+.Line {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(109, 109, 109);
+    position: relative;
+    z-index: -1;
+    bottom: 10px;
+}
+
+.Title1 h3 {
+    text-align: center;
+    font-weight: bolder;
+    color: #515151;
+}
+
+.Gallery {
+    width: 90%;
+
+
+}
+
+.Gallery img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.DateBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.table1 {
+    width: 90%;
+    border: 3px solid rgb(255, 183, 0);
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+.TableTitle {
+    background-color: rgb(255, 183, 0);
+    padding: 20px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+.Tableline {
+    border-top: 3px solid rgb(255, 183, 0);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    padding: 20px 30px;
+    text-align: center;
+    font-size: 1.1rem;
+
+}
+
+.table2 {
+    margin-top: 30px;
+    width: 90%;
+    border: 3px solid rgb(255, 183, 0);
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+.TabBox {
+    display: flex;
+    flex-direction: column;
+    background-color: #ece9e9;
+
+    overflow-y: hidden;
+}
+
+.TabTitleBox {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    max-width: 100vw;
+    overflow-x: scroll;
+    font-size: 0.5rem;
+    border-top: 1px solid #ccc;
+
+}
+
+.TabTitleBox::-webkit-scrollbar {
+    display: none;
+}
+
+.TabTitleBox {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+}
+
+.TabTitleActive {
+    background-color: rgb(255, 183, 0);
+    display: flex;
+    padding: 10px 10px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    flex: 0 0 33.33%;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    margin: 0 10px;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.TabTitle {
+    display: flex;
+    padding: 10px 10px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    flex: 0 0 33.33%;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    background-color: #fff;
+    margin: 0 10px;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+}
+
+.TabPage1 {
+    min-width: 400px;
+}
+
+.TabPage1 h3 {
+    margin-right: 10px;
+}
+
+.dataBox {
+    padding: 10px;
+    border-right: 3px solid rgb(108, 108, 108);
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+}
+
+.dataBox span {
+    margin: 15px 0;
+    color: #6c6c6c;
+}
+
+.None {
+    display: none;
+}
+
+.TabPage2 {
+    min-height: 400px;
+
+}
+
+.TabPage2 h3 {
+    margin-right: 15px;
+}
+
+.TabPage2 ul {
+    margin-top: 30px;
+    border-right: 3px solid #6c6c6c;
+    margin-right: 20px;
+    color: #6c6c6c;
+}
+
+.TabPage2 li {
+    margin: 20px 0;
+}
+
+.TabPage3 {
+    min-height: 400px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.TabPage3 .TableBox {
+    width: 90%;
+
+
+}
+
+.TabPage3 .TableTitleBox {
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+.TabPage3 .TableBodyBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+
+}
+
+.TabPage3 .TableBodyBox div {
+    margin: 10px 0;
+    font-size: .8rem;
+    padding: 5px;
+}
+
+.TabPage3 .TableBodyBox div .Text1 {
+    color: rgb(208, 174, 64);
+}
+
+.MobilizationBox span {
+    background-color: #fff;
+    color: #848484;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    gap: 10px;
+    margin: 10px;
+    font-size: .8rem;
+}
+
+.PointBox {
+    padding: 20px;
+    border-right: 3px solid rgb(108, 108, 108);
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #858585;
+    font-size: .95rem;
+}
+.AbouteBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+}
+.AbouteBox .Title1 {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.Title1 span {
+    background-color: #fff;
+    padding: 0 10px;
+    align-items: center;
+}
+
+.Line {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(109, 109, 109);
+    position: relative;
+    z-index: -1;
+    bottom: 10px;
+}
+.Aboute{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 30px;
+}
+.Aboute div{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Aboute h4{
+    font-weight: bolder;
+}
+.Aboute span{
+    color: #3b3b3b;
+    margin: 10px 0;
+    font-weight: 200;
+}
+.LawsBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+}
+.LawsBox .Title1 {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.Title1 span {
+    background-color: #fff;
+    padding: 0 10px;
+    align-items: center;
+}
+
+.Line {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(109, 109, 109);
+    position: relative;
+    z-index: -1;
+    bottom: 10px;
+}
+.Laws{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-size: .9rem;
+    color: #6c6c6c;
+}
