@@ -6,7 +6,7 @@ import { TabContext } from "../../context"
 const TravelPage = () => {
     const [tab, setTab] = useState(1)
     const { dataState } = useContext(TabContext)
-    console.log(dataState);
+
     return (
         <>
             <Header />
@@ -337,7 +337,7 @@ const TravelPage = () => {
                     </div>
                 </div>
             </div >
-            {/* <Footer /> */}
+         
         </>
     )
 }
