@@ -19,7 +19,7 @@ export const TabProvider = ({ children }) => {
             Text2: "از ۱۸ مرداد ۱۴۰۳",
             Text3: "۱.۵ روزه",
             Text4: "ندارد",
-            Text5: "۳/۵",
+            Text5: "۳ از ۵",
             Text6: "۱۴۰۳/۰۵/۱۸",
             Text7: "۱۴۰۳/۰۵/۱۹",
             Text75:"کمپ متمرکز",
