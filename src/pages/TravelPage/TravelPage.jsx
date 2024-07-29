@@ -108,7 +108,7 @@ const TravelPage = () => {
 
                         </div>
                     </div>
-                    <div className={`${tab == 2 ? Styled.TabPage2 : Styled.None}`}>
+                    <div className={`${tab === 2 ? Styled.TabPage2 : Styled.None}`}>
                         <h3>شرح خدمات</h3>
                         <div>
                             <ul>
