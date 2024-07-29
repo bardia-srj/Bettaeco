@@ -20,7 +20,7 @@ useEffect(() =>{
         <Link to="/travelpage">
             <div className={Styled.CardBox} onClick={() => HandlepropsCard()}>
                 <div className={Styled.ImageBox}>
-                    <img src="image/1.jpg" alt="" />
+                    <img src={Props.item.img6} alt="" />
                 </div>
                 <div className={Styled.TextBox}>
                     <div className={Styled.LocationBox}>

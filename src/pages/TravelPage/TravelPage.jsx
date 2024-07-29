@@ -12,7 +12,7 @@ const TravelPage = () => {
             <Header />
             <div className={Styled.TravelPageBox}>
                 <div className={Styled.ImageBox}>
-                    <img src="image/1.jpg" alt="" />
+                    <img src={dataState.item.img1} alt="" />
                     <div className={Styled.TitleTravel}>
                         <span>سفر {dataState.item.NumberTravel} /{dataState.item.TitleTravel}</span>
                     </div>
@@ -24,10 +24,10 @@ const TravelPage = () => {
                         <h3>{dataState.item.Text1}</h3>
                     </div>
                     <div className={Styled.Gallery}>
-                        <img src="image/409.jpg" alt="" />
-                        <img src="image/409.jpg" alt="" />
-                        <img src="image/409.jpg" alt="" />
-                        <img src="image/409.jpg" alt="" />
+                        <img src={dataState.item.img2} alt="" />
+                        <img src={dataState.item.img3}  alt="" />
+                        <img src={dataState.item.img4}  alt="" />
+                        <img src={dataState.item.img5}  alt="" />
                     </div>
                     <div className={Styled.DateBox}>
                         <div className={Styled.Title1}>
@@ -260,7 +260,7 @@ const TravelPage = () => {
                         <h3>نکته ها</h3>
                         <div className={Styled.PointBox}>
                             <p>لطفا اطلاعات همراهان خود را بصورت کامل ارسال کنید.</p>
-                            <p>همراه داشتن لوازمِ شخصی، تجهیزات مورد نیاز خودرو و همچنین رعایت کلیه‌ی اصول زیست‌محیطی در تمام سفرهای دلتا الزامی‌ست.</p>
+                            <p>همراه داشتن لوازمِ شخصی، تجهیزات مورد نیاز خودرو و همچنین رعایت کلیه‌ی اصول زیست‌محیطی در تمام سفرهای بتا الزامی‌ست.</p>
                             <p>در سفرهای طبیعت‌گردی امکان تغییر کل یا بخشی از برنامه با توجه به شرایط غیرقابل پیش‌بینی از لحاظ زمان‌بندی و یا بازدید از مقاصد اعلام شده، به صلاحدید لیدر برنامه وجود دارد.</p>
                         </div>
                     </div>
@@ -281,7 +281,7 @@ const TravelPage = () => {
                         </div>
                         <div>
                             <h4>سرویس سفر:</h4>
-                            <span>اقتصادی</span>
+                            <span>{dataState.item.Text25}</span>
                         </div>
                         <div>
                             <h4>مسیــر:</h4>
@@ -333,7 +333,7 @@ const TravelPage = () => {
                     <div className={Styled.Laws}>
                         <p>لطفا در انتخاب سفر دقت کنید و قبل از ثبت‌نام شرایط کنسلی را مطالعه نمایید.</p>
                         <p>قبل از انتخاب سفر به جزییات آن دقت فرمایید، امکان اضافه شدن همسفری بعد از تکمیل ظرفیت سفر وجود ندارد.</p>
-                        <p>شرکت در سفرهای بتا به منزله‌ی قبول تمام قوانین و مقررات گروه دلتا در سفر است.</p>
+                        <p>شرکت در سفرهای بتا به منزله‌ی قبول تمام قوانین و مقررات گروه بتا در سفر است.</p>
                     </div>
                 </div>
             </div >
