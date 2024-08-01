@@ -5,7 +5,7 @@ import { TabProvider } from './context';
 import TravelPage from './pages/TravelPage/TravelPage';
 import Travels from './pages/Travles/Travels';
 import ContactUs from './pages/ContactUs/ContactUs';
-import RulePage from './pages/RulesPage/RulesPage';
+// import RulePage from './pages/RulesPage/RulesPage';
 
 function App() {
   return (
