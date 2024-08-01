@@ -25,7 +25,7 @@ const ContactUs = () => {
                         </div>
                     </div>
                     <div className={Styled.buttonBox}>
-                        <a href="tel:98+09307386006">
+                        <a href="tel:+989129492896">
                             <button>call</button>
                         </a>
                     </div>
