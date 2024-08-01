@@ -32,8 +32,11 @@ const Header = () => {
                         </Link>
                     </div>
                     <div>قوانین و مقررات</div>
-                    <div>بلاگ</div>
-                    <div>تماس با ما</div>
+                    <div>
+                        <Link to="/contactus">
+                            تماس با ما
+                        </Link>
+                    </div>
                     <div className={Styled.divEnd}>درباره ما</div>
                 </div>
             </div>

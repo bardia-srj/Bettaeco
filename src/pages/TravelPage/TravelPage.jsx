@@ -1,4 +1,4 @@
-import { useContext, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import Header from "../../components/Header/Header"
 import Styled from "./TravelPage.module.css"
 import { TabContext } from "../../context"
@@ -7,6 +7,14 @@ const TravelPage = () => {
     const [tab, setTab] = useState(1)
     const { dataState } = useContext(TabContext)
 
+
+    useEffect(() => {
+        // پس از رندر شدن صفحه، به تب فعال اسکرول می‌کنیم
+        const activeTab = document.getElementById(`tab-${tab}`);
+        if (activeTab) {
+          activeTab.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, [tab]);
     return (
         <>
             <Header />
@@ -25,9 +33,9 @@ const TravelPage = () => {
                     </div>
                     <div className={Styled.Gallery}>
                         <img src={dataState.item.img2} alt="" />
-                        <img src={dataState.item.img3}  alt="" />
-                        <img src={dataState.item.img4}  alt="" />
-                        <img src={dataState.item.img5}  alt="" />
+                        <img src={dataState.item.img3} alt="" />
+                        <img src={dataState.item.img4} alt="" />
+                        <img src={dataState.item.img5} alt="" />
                     </div>
                     <div className={Styled.DateBox}>
                         <div className={Styled.Title1}>
@@ -77,19 +85,19 @@ const TravelPage = () => {
                 </div>
                 <div className={Styled.TabBox}>
                     <div className={Styled.TabTitleBox}>
-                        <div className={`${tab === 1 ? Styled.TabTitleActive : Styled.TabTitle}`}>
+                        <div id="tab-1" className={`${tab === 1 ? Styled.TabTitleActive : Styled.TabTitle}`}>
                             <span onClick={() => setTab(1)}>شرح برنامه</span>
                         </div>
-                        <div className={`${tab === 2 ? Styled.TabTitleActive : Styled.TabTitle}`}>
+                        <div id="tab-2" className={`${tab === 2 ? Styled.TabTitleActive : Styled.TabTitle}`}>
                             <span onClick={() => setTab(2)}>شرح خدمات</span>
                         </div>
-                        <div className={`${tab === 3 ? Styled.TabTitleActive : Styled.TabTitle}`}>
+                        <div id="tab-3" className={`${tab === 3 ? Styled.TabTitleActive : Styled.TabTitle}`}>
                             <span onClick={() => setTab(3)}>اقامــت</span>
                         </div>
-                        <div className={`${tab === 4 ? Styled.TabTitleActive : Styled.TabTitle}`}>
+                        <div id="tab-4" className={`${tab === 4 ? Styled.TabTitleActive : Styled.TabTitle}`}>
                             <span onClick={() => setTab(4)}>تجهیزات</span>
                         </div>
-                        <div className={`${tab === 5 ? Styled.TabTitleActive : Styled.TabTitle}`}>
+                        <div id="tab-5" className={`${tab === 5 ? Styled.TabTitleActive : Styled.TabTitle}`}>
                             <span onClick={() => setTab(5)}>نکتــه‌ها</span>
                         </div>
 
@@ -220,9 +228,9 @@ const TravelPage = () => {
                             <span>
                                 لوازم خودرو (زاپاس سالم - آچار چرخ - جک)
                             </span>
-                           
-                            
-                           
+
+
+
                             <span>
                                 داروهای شخصی (در صورت مصرف)
                             </span>
@@ -267,7 +275,7 @@ const TravelPage = () => {
                     <div className={Styled.Aboute}>
                         <div>
                             <h2>{dataState.item.TitleTravel}</h2>
-                            <span>{dataState.item.Text23}</span>
+                            <span className={Styled.spanYellow}>{dataState.item.Text23}</span>
                         </div>
                         <div>
                             <h4>باشگاه: </h4>
@@ -300,7 +308,7 @@ const TravelPage = () => {
                             <h4>هزینه برای دوستانی که از خودروهای گروه استفاده می‌کنند:</h4>
                             <span>
                                 {dataState.item.Text33}
-                                <br/>
+                                <br />
                                 ({dataState.item.Text34})
                             </span>
                         </div>
@@ -310,12 +318,12 @@ const TravelPage = () => {
                         </div>
                         <div>
                             <h4>اطلاعات بیشتر و ثبت‌نام:</h4>
-                            <span>تماس : 896-9492-0912 
+                            <span>تماس : 896-9492-0912
                                 <br />
-                                 ثبت‌نام در واتس اپ : 6006-738-0930
+                                ثبت‌نام در واتس اپ : 6006-738-0930
                                 <br />
 
-                                </span>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -331,7 +339,7 @@ const TravelPage = () => {
                     </div>
                 </div>
             </div >
-         
+
         </>
     )
 }
