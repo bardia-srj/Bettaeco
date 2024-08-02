@@ -82,3 +82,43 @@ padding-top: 15px;
 .readMoreBtn:hover {
     background-color: #ffaa00;
 }
+.buttonBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TableBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+.Table{
+    display: flex;
+    flex-direction: column;
+font-weight: bold;
+    width: 80%;
+
+    border: 1px solid rgb(255, 204, 0);
+    border-radius: 15px;
+}
+.TitleTable{
+    border-top-right-radius: 14px;
+    border-top-left-radius: 14px;
+    background-color: rgb(255, 204, 0);
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+.TableLine{
+   border-top:2px solid rgb(255, 204, 0);
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}

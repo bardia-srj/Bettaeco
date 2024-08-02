@@ -63,7 +63,7 @@ const HandleData = (event) =>{
 
 useEffect(()=>{
     HandleData(data)
-})
+},[data])
 
     return (
         <TabContext.Provider value={{ travelData, setTravelData ,dataState , setDataState }}>

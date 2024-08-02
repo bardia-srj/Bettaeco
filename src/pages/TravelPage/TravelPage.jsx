@@ -8,13 +8,7 @@ const TravelPage = () => {
     const { dataState } = useContext(TabContext)
 
 
-    useEffect(() => {
-        // پس از رندر شدن صفحه، به تب فعال اسکرول می‌کنیم
-        const activeTab = document.getElementById(`tab-${tab}`);
-        if (activeTab) {
-          activeTab.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, [tab]);
+    
     return (
         <>
             <Header />
