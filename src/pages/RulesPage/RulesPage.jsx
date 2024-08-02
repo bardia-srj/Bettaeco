@@ -77,7 +77,7 @@ const RulePage = () => {
                     <a href="#s1">
 
                         <div className={Styled.TableLine}>
-                            مقررات سفرهای گروهی دلتا
+                            مقررات سفرهای گروهی بتا
                         </div>
                     </a>
                     <a href="#s2">
