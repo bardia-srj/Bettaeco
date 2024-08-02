@@ -13,7 +13,7 @@ const HandlepropsCard = () =>{
 useEffect(() =>{
     HandlepropsCard()
     
-},[Props])
+})
 
     return (
         <> 
