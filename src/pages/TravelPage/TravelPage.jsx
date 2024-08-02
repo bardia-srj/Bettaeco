@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react"
+import { useContext, useState } from "react"
 import Header from "../../components/Header/Header"
 import Styled from "./TravelPage.module.css"
 import { TabContext } from "../../context"
