@@ -31,7 +31,11 @@ const Header = () => {
                             برنامه ها
                         </Link>
                     </div>
-                    <div>قوانین و مقررات</div>
+                    <div>
+                        <Link to="/rulespage">
+                            قوانین و مقررات
+                        </Link>
+                    </div>
                     <div>
                         <Link to="/contactus">
                             تماس با ما
