@@ -6,6 +6,7 @@ import TravelPage from './pages/TravelPage/TravelPage';
 import Travels from './pages/Travles/Travels';
 import ContactUs from './pages/ContactUs/ContactUs';
 import RulePage from './pages/RulesPage/RulesPage';
+import AbouteUs from './pages/AbouteUs/AbouteUs';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/travels' element={<Travels />} />
           <Route path='/contactus' element={<ContactUs />} />
           <Route path='/rulespage' element={<RulePage />} />
+          <Route path='/abouteus' element={<AbouteUs />} />
         </Routes>
       </TabProvider>
     </>

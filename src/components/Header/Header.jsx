@@ -41,7 +41,12 @@ const Header = () => {
                             تماس با ما
                         </Link>
                     </div>
-                    <div className={Styled.divEnd}>درباره ما</div>
+                    <div className={Styled.divEnd}>
+                        <Link to="/abouteus">
+                        درباره ما
+                        </Link>
+
+                    </div>
                 </div>
             </div>
             <div className={Styled.HeaderBox1}>
